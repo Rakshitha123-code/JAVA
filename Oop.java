@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 /*class Student{
     int age;
     String name;
@@ -2097,22 +2097,8 @@ public class Oop{
 }
 */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // CONSTRUCTOR OVERLOADING
-class Student{
+/*class Student{
     String name;
     int age;
     Student()
@@ -2147,16 +2133,7 @@ public class Oop{
         s2.display();
         s3.display();
     }
-}
-
-
-
-
-
-
-
-
-=======
+}*/
 /*class Student{
     int age;
     String name;
@@ -4252,150 +4229,24 @@ public class Oop{
         a=new Cat();
         a.sound();
     }
-}
-*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// CONSTRUCTOR OVERLOADING
-/*class Student{
-    String name;
-    int age;
-    Student()
-    {
-        name="UNKNOWN";
-        age=0;
-    }
-    Student(String name)
-    {
-        this.name=name;
-        age=0;
-    }
-    Student(String name,int age)
-    {
-        this.name=name;
-        this.age=age;    
-    }
-    void display()
-    {
-        System.out.println(name);
-        System.out.println(age);
-    }
-
-}
-public class Oop{
-    public static void main(String[] args)        
-    {
-        Student s1=new Student();
-        Student s2=new Student("RAJ");
-        Student s3=new Student("RAM",20);
-        s1.display();
-        s2.display();
-        s3.display();
-    }
-}
-*/
-// CONSTRUCTOR CHAINING
-/*class Employee
-{
-    String name;
-    int id;
-    double salary;
-    Employee()
-    {
-        this("UNKNOWN",0,0.00);
-
-    }
-    Employee(String name)
-    {
-        this(name,0,0.00);
-    }
-    Employee(String name,int id,double salary)
-    {
-        this.name=name;
-        this.id=id;
-        this.salary=salary;
-    }
-    void display()
-    {
-        System.out.println(name);
-        System.out.println(id);
-        System.out.println(salary);
-    }
-}
-public class Oop{
-public static void main(String[] args) 
- {
-        Employee e1=new Employee();
-        Employee e2=new Employee("RAJ");
-        Employee e3=new Employee("RAM",101,12000.00);
-        e1.display();
-        e2.display();
-        e3.display();
-}
 }*/
-// ENCAPSULATION
-class BankAccount{
-    private String accountHoldername;
-    private int balance;
-    void deposit(int amount)
-    { if(amount>0)
-       {
-        this.balance+=amount;
-       }
-    }
-    void withdraw(int amount)
-    {
-        if(amount>0 && amount<=this.balance)
-        {
-            this.balance-=amount;
-        }
-        else
-        {
-            System.out.print("INSUFFICIENT BALANCE");
-        }
-    }
-    int  getbalance()
-    {
-        return balance;
-    }
-    void setAccountholder(String accountHoldername)
-    {
-        this.accountHoldername=accountHoldername; 
-        
-    }
-    void display()
-    {
-        System.out.println("ACCOUNT HOLDER NAME IS:"+accountHoldername);
-        System.out.println("BALANCE IS:"+balance);
+// ACCESS MODIFIERS
+class Employee{
+    public static void main(String[] args) {
+        private int salary = 10000;
+        int age = 20;
+        protected String department = "CSE";
+        public String name = "Raj";
     }
 }
 public class Oop{
-    public static void main(String[] args) { 
-        BankAccount b1=new BankAccount();
-        b1.deposit(10000);
-        b1.withdraw(5000);
-        System.out.println(b1.getbalance());
-        b1.setAccountholder("RAJ");
-        b1.display();
-
-
-        
-    }     
-
-    
+    public static void main(String[] args) {
+        Employee e1 = new Employee();
+        System.out.println(e1.name);
+        System.out.println(e1.age);
+        System.out.println(e1.department);
+        System.out.println(e1.salary);
+    }
 }
 
 
@@ -4404,4 +4255,22 @@ public class Oop{
 
 
 
->>>>>>> 79080a8 (Add Java DSA practice)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
