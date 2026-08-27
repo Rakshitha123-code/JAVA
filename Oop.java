@@ -4232,12 +4232,11 @@ public class Oop{
 }*/
 // ACCESS MODIFIERS
 class Employee{
-    public static void main(String[] args) {
         private int salary = 10000;
         int age = 20;
         protected String department = "CSE";
         public String name = "Raj";
-    }
+    
 }
 public class Oop{
     public static void main(String[] args) {
