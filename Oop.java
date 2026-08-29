@@ -4248,7 +4248,7 @@ public class Oop{
     }
 }*/
 // INHERITANCE
-class Person  {   
+/*class Person  {   
            String name;
            int age;
         void displayPerson()
@@ -4275,9 +4275,9 @@ class Person  {
             s1.displayStudent();
     
     }
-}
- INHERITANCE
-class Person  {   
+}*/
+ //INHERITANCE WITH ENCAPSULATION
+/*class Person  {   
           private String name;
           private int age;
         void displayPerson()
@@ -4303,6 +4303,46 @@ class Person  {
             s1.displayPerson();
             s1.displayStudent();
     
+    }
+}*/
+/*  In This code,the name and int are marked private as private members are accessed only within the same class and not outside it so the code will give error as we are trying to access the private members of the class Person in the main method of the class Oop. To fix this issue, we can use public getter and setter methods in the Person class to access and modify the private members. Here's the corrected code:
+*/
+class Person{
+    private String name;
+    private int age;
+    void setname(String name)
+    {
+        this.name=name;
+    }
+    void setage(int age)
+    {
+        this.age=age;
+    }
+    String getname()
+    {
+        return name;
+    }
+    int getage()
+    {
+        return age;
+    }
+
+}
+class Student extends Person{
+    void displayStudent()
+    {
+        System.out.println(getname());
+        System.out.println(getage());
+    }
+}
+public class Oop{
+    public static void main(String[] args) {
+        Student s1=new Student();
+        s1.setname("RAJ");
+        s1.setage(15);
+        s1.getname();
+        s1.getage();
+        s1.displayStudent();
     }
 }
 
