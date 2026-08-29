@@ -4249,8 +4249,37 @@ public class Oop{
 }*/
 // INHERITANCE
 class Person  {   
-         String name;
-         int age;
+           String name;
+           int age;
+        void displayPerson()
+         {
+           System.out.println(name);
+           System.out.println(age);
+         }
+
+    }
+    class Student extends Person{
+        int rollno;
+        void displayStudent()
+        {
+            System.out.println(rollno);
+        }
+    }
+    public class Oop{
+        public static void main(String[] args) {
+            Student s1=new Student();
+            s1.name="RAJ";
+            s1.age=19;
+            s1.rollno=12;
+            s1.displayPerson();
+            s1.displayStudent();
+    
+    }
+}
+ INHERITANCE
+class Person  {   
+          private String name;
+          private int age;
         void displayPerson()
          {
            System.out.println(name);
