@@ -4231,7 +4231,7 @@ public class Oop{
     }
 }*/
 // ACCESS MODIFIERS
-class Employee{
+/*class Employee{
         private int salary = 10000;
         int age = 20;
         protected String department = "CSE";
@@ -4246,7 +4246,37 @@ public class Oop{
         System.out.println(e1.department);
         System.out.println(e1.salary);
     }
+}*/
+// INHERITANCE
+class Person  {   
+         String name;
+         int age;
+        void displayPerson()
+         {
+           System.out.println(name);
+           System.out.println(age);
+         }
+
+    }
+    class Student extends Person{
+        int rollno;
+        void displayStudent()
+        {
+            System.out.println(rollno);
+        }
+    }
+    public class Oop{
+        public static void main(String[] args) {
+            Student s1=new Student();
+            s1.name="RAJ";
+            s1.age=19;
+            s1.rollno=12;
+            s1.displayPerson();
+            s1.displayStudent();
+    
+    }
 }
+
 
 
 
