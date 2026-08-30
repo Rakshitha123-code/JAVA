@@ -4386,7 +4386,7 @@ public class Oop{
     }
 }*/
 // MULTILEVEL INHERITANCE
-class Vehicle{
+/*class Vehicle{
     String brand;
     void start()
     {
@@ -4417,7 +4417,39 @@ public class Oop{
         s1.turbo=false;
         s1.boost();
     }
+}*/
+// HEIRARCHIAL INHERITANCE
+class Animal{
+    String name;
+    void eat()
+    {
+        System.out.println("Animal eating");
+    }
 }
+class Dog extends Animal{
+    void bark()
+    {
+        System.out.println("Dog barking");
+    }
+}
+class Cat extends Dog{
+    void meow()
+    {
+        System.out.println("Cat sound ");
+    }
+}
+public class Oop{
+    public static void main(String[] args) {
+        Cat c1=new Cat();
+        c1.meow();
+        c1.bark();
+        c1.eat();
+        c1.name="Shadow";
+        Dog d1=new Dog();
+        d1.bark();
+
+    }
+} 
 
 
 
