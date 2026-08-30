@@ -4364,7 +4364,7 @@ public class Oop{
     }
 }*/
 // SINGLE INHERITANCE
-class Vehicle{
+/*class Vehicle{
     String brnad;
     void start()
     {
@@ -4383,6 +4383,39 @@ public class Oop{
         Car c1=new Car();
         c1.start();
         c1.displaySpeed();
+    }
+}*/
+// MULTILEVEL INHERITANCE
+class Vehicle{
+    String brand;
+    void start()
+    {
+        System.out.println("Vehicle Starting");
+    }
+}
+class Car extends Vehicle{
+    int speed;
+    void drive()
+    {
+        System.out.println("Car Starting");
+    }
+}
+class SportsCar extends Car{
+    boolean  turbo;
+    void boost()
+    {
+        System.out.println("SportsCar Starting");
+    }
+}
+public class Oop{
+    public static void main(String[] args) {
+        SportsCar s1=new SportsCar();
+        s1.brand="SUZUKI";
+        s1.start();
+        s1.speed=150;
+        s1.drive();
+        s1.turbo=false;
+        s1.boost();
     }
 }
 
