@@ -4346,8 +4346,8 @@ public class Oop{
         s1.displayStudent();
     }
 }*/
-// inheritance with protected
-class Person{
+// INHERITANCE WITH PROTECTED
+/*class Person{
     protected String name;
 }
 class Student extends Person{
@@ -4361,6 +4361,28 @@ public class Oop{
         Student s1=new Student();
         s1.name="RAJ";
         s1.display();
+    }
+}*/
+// SINGLE INHERITANCE
+class Vehicle{
+    String brnad;
+    void start()
+    {
+        System.out.println("Vehicle Starting");
+    }
+}
+class Car extends Vehicle{
+    int speed;
+    void displaySpeed()
+    {
+        System.out.println("Car speed");
+    }
+}
+public class Oop{
+    public static void main(String[] args) {
+        Car c1=new Car();
+        c1.start();
+        c1.displaySpeed();
     }
 }
 
