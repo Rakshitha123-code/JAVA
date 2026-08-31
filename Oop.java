@@ -4419,7 +4419,7 @@ public class Oop{
     }
 }*/
 // HEIRARCHIAL INHERITANCE
-class Animal{
+/*class Animal{
     String name;
     void eat()
     {
@@ -4442,14 +4442,33 @@ public class Oop{
     public static void main(String[] args) {
         Cat c1=new Cat();
         c1.meow();
-        c1.bark();
         c1.eat();
         c1.name="Shadow";
         Dog d1=new Dog();
         d1.bark();
+        d1.name="Rocky";
 
     }
-} 
+} */
+// MULTIPLE INHERITANCE isnot executed by java  because  when we see:
+/* class A{
+void show()
+{
+System.out.println("A");
+}
+}
+class B
+{ 
+void show()
+{
+System.out.println("B");
+}
+}
+IN MAIN
+c obj=new C();
+c.show() 
+means compiler doesnot know which show to execute ie whether A's or B's 
+ */
 
 
 
