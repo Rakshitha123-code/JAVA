@@ -4450,8 +4450,8 @@ public class Oop{
 
     }
 } */
-// MULTIPLE INHERITANCE isnot executed by java  because  when we see:
-/* class A{
+ MULTIPLE INHERITANCE isnot executed by java  because  when we see:
+ class A{
 void show()
 {
 System.out.println("A");
@@ -4468,7 +4468,7 @@ IN MAIN
 c obj=new C();
 c.show() 
 means compiler doesnot know which show to execute ie whether A's or B's 
- */
+ 
 
 
 
