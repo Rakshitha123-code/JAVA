@@ -4432,7 +4432,7 @@ class Dog extends Animal{
         System.out.println("Dog barking");
     }
 }
-class Cat extends Dog{
+class Cat extends Animal{
     void meow()
     {
         System.out.println("Cat sound ");
