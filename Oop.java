@@ -4489,7 +4489,7 @@ public class Oop{
     }
 }*/
 // USING @Override 
-class Animal{
+/*class Animal{
     void sound()
     {
         System.out.println("Animal Sound");
@@ -4507,6 +4507,26 @@ public class Oop{
         Dog d1=new Dog();
         d1.sound();
 
+    }
+}*/
+// ACCESSING PARENT CLASS METHODS
+class Animal{
+    void sound()
+    {
+        System.out.println("ANIMAL SOUND");
+    }
+}
+class Dog extends Animal{
+    void sound()
+    {   super.sound();
+        System.out.println("DOG SOUND");
+    }
+}
+public class Oop{
+    public static void main(String[] args) {
+        Dog d1=new Dog();
+        d1.sound();
+       
     }
 }
 
