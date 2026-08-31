@@ -4470,7 +4470,7 @@ c.show()
 means compiler doesnot know which show to execute ie whether A's or B's 
  */
 //METHOD OVERRIDING
-class Animal{
+/*class Animal{
     void sound()
     {
         System.out.println("Animal makes a Sound");
@@ -4487,8 +4487,28 @@ public class Oop{
         Dog d1=new Dog();
         d1.sound();
     }
+}*/
+// USING @Override 
+class Animal{
+    void sound()
+    {
+        System.out.println("Animal Sound");
+    }
 }
+class Dog extends Animal{
+    @Override
+    void sound()
+    {
+        System.out.println("Dog Sound");
+    }
+}
+public class Oop{
+    public static void main(String[] args) {
+        Dog d1=new Dog();
+        d1.sound();
 
+    }
+}
 
 
 
