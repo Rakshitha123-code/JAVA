@@ -4450,7 +4450,7 @@ public class Oop{
 
     }
 } */
- MULTIPLE INHERITANCE isnot executed by java  because  when we see:
+ /*MULTIPLE INHERITANCE isnot executed by java  because  when we see:
  class A{
 void show()
 {
@@ -4468,7 +4468,26 @@ IN MAIN
 c obj=new C();
 c.show() 
 means compiler doesnot know which show to execute ie whether A's or B's 
- 
+ */
+//METHOD OVERRIDING
+class Animal{
+    void sound()
+    {
+        System.out.println("Animal makes a Sound");
+    }
+}
+class Dog extends Animal{
+    void sound()
+    {
+        System.out.println("Dog Barks");
+    }
+}
+public class Oop{
+    public static void main(String[] args) {
+        Dog d1=new Dog();
+        d1.sound();
+    }
+}
 
 
 
