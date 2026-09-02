@@ -4644,7 +4644,7 @@ public class Oop{
     }
 }*/
 // UPCASTING
-class Animal{
+/*class Animal{
     Animal()
     {
         System.out.println("Animal");
@@ -4674,9 +4674,31 @@ public class Oop{
        d1.bark();
         //a1.bark();// this will give error as a1 is of type Animal and Animal class doesnot have bark() method so we cannot call it using a1 reference
 }
-}
+}*/
 // Animal a holds the reference of Dog class object and this is called upcasting as we are converting a child class object into parent class reference
-
+// DOWNCASTING
+class Animal{
+    void sound()
+    {
+        System.out.println("Animal Sound");
+    }
+}
+class Dog extends Animal{
+    void bark()
+    {
+        System.out.println("Dog Sound");
+    }
+}
+public class Oop{
+    public static void main(String[] args) {
+        Animal a1=new Dog();
+        a1.sound();
+        Dog d1=(Dog)a1;
+        d1.bark();
+        a1.sound();
+       // a1.bark();// this will give error as a1 is of type Animal and Animal class doesnot have bark() method so we cannot call it using a1 reference
+    }
+}
 
 
 
