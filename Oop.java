@@ -4510,7 +4510,7 @@ public class Oop{
     }
 }*/
 // ACCESSING PARENT CLASS METHODS
-class Animal{
+/*class Animal{
     void sound()
     {
         System.out.println("ANIMAL SOUND");
@@ -4528,8 +4528,26 @@ public class Oop{
         d1.sound();
        
     }
+}*/
+// ACCESSING PARENT CLASS VARIABLES
+class Person{
+    String name="RAJ";
 }
-
+class Student extends Person{
+    String name="RAM";
+    void show()
+    {
+        System.out.println(name);
+        System.out.println(super.name);
+    }
+}
+public class Oop{
+    public static void main(String[]args)    
+    {
+        Student s1=new Student();
+        s1.show();
+    }
+}
 
 
 
