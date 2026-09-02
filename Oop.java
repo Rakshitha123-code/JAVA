@@ -4628,7 +4628,7 @@ public class Oop
 //  inside C tht will call B() so B() does the same thing and calls A() so first A () is executed then B() and then C() is executed
 //but this works only when a() has no argument constructor if it has thn it has to be called by creating object itself
 // PROTECTED ACCESS MODIFIER-will allow child class to access the parent class members but not outside the package
-class Person{
+/*class Person{
     protected int age=19;
 }
 class Student extends Person{
@@ -4642,8 +4642,27 @@ public class Oop{
         Student s1=new Student();
         s1.display();
     }
+}*/
+// UPCASTING
+class Animal{
+    Animal()
+    {
+        System.out.println("Animal");
+    }
 }
-
+class Dog extends Animal{
+    Dog()
+    {
+        System.out.println("Dog");
+    }
+}
+public class Oop{
+    
+    public static void main(String[] args) {
+        Dog d1=new Dog();
+        Animal a1=new Dog();
+}
+}
 
 
 
