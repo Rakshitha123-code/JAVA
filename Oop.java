@@ -4549,7 +4549,7 @@ public class Oop{
     }
 }*/
 // ACCESSING CONSTRUCTOR VIA SUPER KEYWORD
-class Vehicle{
+/*class Vehicle{
     Vehicle()
     {
         System.out.println("VEHICLE CREATED");
@@ -4565,6 +4565,37 @@ class Bike  extends  Vehicle{
 public class Oop{
     public static void main(String[] args) {
         Bike b1=new Bike();
+    }   
+}*/
+// 
+class Person {
+    String name = "Person";
+
+    void show() {
+        System.out.println("I am a Person");
+    }
+}
+
+class Student extends Person {
+    String name = "Student";
+
+    @Override
+    void show() {
+        System.out.println("I am a Student");
+    }
+
+    void display() {
+        
+        System.out.println(name);
+        System.out.println(super.name);
+        show();
+        super.show();
+    }
+}
+public class Oop{
+    public static void main(String[] args) {
+        Student s1 = new Student();
+        s1.display();
     }   
 }
 
