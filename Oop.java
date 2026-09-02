@@ -4568,7 +4568,7 @@ public class Oop{
     }   
 }*/
 // 
-class Person {
+/*class Person {
     String name = "Person";
 
     void show() {
@@ -4597,7 +4597,36 @@ public class Oop{
         Student s1 = new Student();
         s1.display();
     }   
+}*/
+// CONSTRUCTOR EXECUTION ORDER
+class A{
+    A()
+    {
+        System.out.println("A CREATED");
+    }
 }
+class B extends A{
+    B()
+    {
+        System.out.println("B CREATED");
+    }
+}
+class C extends B{
+    C()
+    {
+        System.out.println("C CREATED");
+    }
+}
+public class Oop
+{
+    public static void main(String[] args) {
+        C obj=new C();
+
+    }
+}
+// the  constructor execution order is tht first parent constructor is executed bcoz when we call C()  java automatically creates a super() constructor
+//  inside C tht will call B() so B() does the same thing and calls A() so first A () is executed then B() and then C() is executed
+//but this works only when a() has no argument constructor if it has thn it has to be called by creating object itself
 
 
 
