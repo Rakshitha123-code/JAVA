@@ -4649,11 +4649,19 @@ class Animal{
     {
         System.out.println("Animal");
     }
+    void sound()
+    {
+        System.out.println("Animal Sound");
+    }
 }
 class Dog extends Animal{
     Dog()
     {
         System.out.println("Dog");
+    }
+    void bark()
+    {
+        System.out.println("Dog Sound");
     }
 }
 public class Oop{
@@ -4661,8 +4669,13 @@ public class Oop{
     public static void main(String[] args) {
         Dog d1=new Dog();
         Animal a1=new Dog();
+        a1.sound();
+        d1.sound();// this works bcoz child class object can access parent class methods but not vice versa
+       d1.bark();
+        //a1.bark();// this will give error as a1 is of type Animal and Animal class doesnot have bark() method so we cannot call it using a1 reference
 }
 }
+// Animal a holds the reference of Dog class object and this is called upcasting as we are converting a child class object into parent class reference
 
 
 
