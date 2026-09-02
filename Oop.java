@@ -4599,7 +4599,7 @@ public class Oop{
     }   
 }*/
 // CONSTRUCTOR EXECUTION ORDER
-class A{
+/*class A{
     A()
     {
         System.out.println("A CREATED");
@@ -4623,11 +4623,26 @@ public class Oop
         C obj=new C();
 
     }
-}
+}*/
 // the  constructor execution order is tht first parent constructor is executed bcoz when we call C()  java automatically creates a super() constructor
 //  inside C tht will call B() so B() does the same thing and calls A() so first A () is executed then B() and then C() is executed
 //but this works only when a() has no argument constructor if it has thn it has to be called by creating object itself
-
+// PROTECTED ACCESS MODIFIER-will allow child class to access the parent class members but not outside the package
+class Person{
+    protected int age=19;
+}
+class Student extends Person{
+    void display()
+    {
+        System.out.println(age);
+    }
+}
+public class Oop{
+    public static void main(String[] args) {
+        Student s1=new Student();
+        s1.display();
+    }
+}
 
 
 
