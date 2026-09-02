@@ -4530,7 +4530,7 @@ public class Oop{
     }
 }*/
 // ACCESSING PARENT CLASS VARIABLES
-class Person{
+/*class Person{
     String name="RAJ";
 }
 class Student extends Person{
@@ -4547,6 +4547,25 @@ public class Oop{
         Student s1=new Student();
         s1.show();
     }
+}*/
+// ACCESSING CONSTRUCTOR VIA SUPER KEYWORD
+class Vehicle{
+    Vehicle()
+    {
+        System.out.println("VEHICLE CREATED");
+    }
+}
+class Bike  extends  Vehicle{
+    Bike()
+    {
+        super();
+        System.out.println("BIKE CREATED");
+    }
+}
+public class Oop{
+    public static void main(String[] args) {
+        Bike b1=new Bike();
+    }   
 }
 
 
