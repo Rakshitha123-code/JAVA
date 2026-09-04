@@ -4700,7 +4700,7 @@ public class Oop{
     }
 }*/
 // FINAL 
-class Parent {
+/*class Parent {
     final int x = 10;
 
     final void show() {
@@ -4719,6 +4719,26 @@ public class Oop {
     public static void main(String[] args) {
         Child c = new Child();
         c.display();
+    }
+}*/ 
+// POLYMORPHISM
+class Animal{
+    void sound()
+    {
+        System.out.println("Animal");
+    }
+}
+class Dog extends Animal{
+    @Override
+    void sound()
+    {
+        System.out.println("Dog");
+    }
+}
+public class Oop{
+    public static void main(String[] args) {
+        Animal a=new Dog();
+        a.sound();// this will give "dog" as o/p bcoz though the reference is animal but the object created is dog object  so dog overrides the animal reference
     }
 }
 
