@@ -4722,7 +4722,7 @@ public class Oop {
     }
 }*/ 
 // POLYMORPHISM
-class Animal{
+/*class Animal{
     void sound()
     {
         System.out.println("Animal");
@@ -4740,7 +4740,40 @@ public class Oop{
         Animal a=new Dog();
         a.sound();// this will give "dog" as o/p bcoz though the reference is animal but the object created is dog object  so dog overrides the animal reference
     }
+}*/
+// DYNAMIC METHOD DISPATCH
+class Animal{
+    void sound()
+    {
+        System.out.println("Animal");
+    }
 }
+class Dog extends Animal{
+    @Override
+    void sound()
+    {
+        System.out.println("Dog");
+    }
+}
+class Cat extends Animal{
+    @Override
+    void sound()
+    {
+        System.out.println("Cat");
+    }
+}
+public class Oop{
+    public static void main(String[] args) {
+        Animal a;
+        a=new Dog();
+        a.sound();
+        a=new Cat();
+        a.sound();
+    }
+}
+
+
+
 
 
 
