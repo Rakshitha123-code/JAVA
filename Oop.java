@@ -4843,7 +4843,7 @@ public class Oop{
     }
 }*/
 // INTERFACES- is the rules/contract tht  tells a class wt  to do without specifing the full implementation
-interface Animal{
+/*interface Animal{
    void sound();
      
 }
@@ -4856,10 +4856,44 @@ class Dog implements Animal{
 }
 public class Oop{
     public static void main(String[] args) {
-        Dog d1=new Dog();
+       Animal d1=new Dog();
         d1.sound();
     }
+}*/
+// INTERFACES WITH MULTIPLE IMPLEMENTATION - with ABSTRACT METHOD
+/*interface Animal{
+    void sound();
 }
+class Dog implements Animal{
+    @Override
+    public void sound()
+    {
+        System.out.println("Dog Barks");
+    }
+}
+public class Oop{
+    public static void main(String[] args) {
+        Animal d1=new Dog();
+        d1.sound();
+    }
+}*/
+// INTERFACE WITH DEFAULT METHOD
+interface Animal{
+    default void eat()
+    {
+        System.out.println("Eating");
+    }
+}
+class Dog implements Animal{
+
+}
+public class Oop{
+    public static void main(String[] args) {
+        Dog d1=new Dog();
+        d1.eat();
+    }
+}
+
     
 
 
