@@ -4771,7 +4771,7 @@ public class Oop{
     }
 }*/
 //ABSTRACTION
-abstract class Animal{
+/*abstract class Animal{
     abstract void sound();
 }
 class Dog extends Animal{
@@ -4785,6 +4785,25 @@ public class Oop{
     public static void main(String[] args) {
         Animal a=new Dog();
         a.sound();
+    }
+}*/
+//ABSTRACTION WITH CONSTRUCTOR
+abstract class Animal{
+    Animal()
+    {
+       System.out.println("ANIMAL CREATED");
+    }
+}
+class Dog extends Animal{
+    Dog()
+    {
+        System.out.println("DOG CREATED");
+    }
+}
+public class Oop{
+    public static void main(String[] args) {
+        Dog d1=new Dog();
+        
     }
 }
 
