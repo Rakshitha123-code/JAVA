@@ -4807,7 +4807,7 @@ public class Oop{
     }
 }*/
 //ABSTRACTION WITH METHODS
-abstract class Shape{
+/*abstract class Shape{
     abstract void area();
     abstract void circumference();
     void display()
@@ -4840,6 +4840,24 @@ public class Oop{
         c1.display();
         c1.area();
         c1.circumference();
+    }
+}*/
+// INTERFACES- is the rules/contract tht  tells a class wt  to do without specifing the full implementation
+interface Animal{
+   void sound();
+     
+}
+class Dog implements Animal{
+    @Override
+    public void sound()
+    {
+        System.out.println("Dog Barks");
+    }
+}
+public class Oop{
+    public static void main(String[] args) {
+        Dog d1=new Dog();
+        d1.sound();
     }
 }
     
