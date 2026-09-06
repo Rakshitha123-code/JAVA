@@ -4910,7 +4910,7 @@ public class Oop{
     }
 }*/
 // INTERFACE WITH VARIABLES
-interface Animal{
+/*interface Animal{
     int legs=4;
    
 }
@@ -4924,6 +4924,34 @@ public class Oop{
     public static void main(String[] args) {
         Dog d1=new Dog();
         d1.display();
+    }
+}*/
+// INTERFACE WITH MULTIPLE INHERITANCE
+interface A{
+    default void show()
+    {
+        System.out.println("A");
+    }
+}
+interface B{
+    default void show()
+    {
+        System.out.println("B");
+    }
+}
+class  C implements A,B {
+    @Override
+       public void show()
+    {
+        A.super.show();
+        B.super.show();
+        System.out.println("C");
+    }
+}
+public class Oop{
+    public static void main(String[] args) {
+        C c1=new C();
+        c1.show();
     }
 }
 
