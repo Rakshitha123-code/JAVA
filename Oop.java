@@ -4788,7 +4788,7 @@ public class Oop{
     }
 }*/
 //ABSTRACTION WITH CONSTRUCTOR
-abstract class Animal{
+/*abstract class Animal{
     Animal()
     {
        System.out.println("ANIMAL CREATED");
@@ -4803,9 +4803,46 @@ class Dog extends Animal{
 public class Oop{
     public static void main(String[] args) {
         Dog d1=new Dog();
-        
+
+    }
+}*/
+//ABSTRACTION WITH METHODS
+abstract class Shape{
+    abstract void area();
+    abstract void circumference();
+    void display()
+    {
+        System.out.println("SHAPE CREATED");
     }
 }
+class Circle extends Shape{
+    double radius;
+    Circle(double radius)
+    {
+        this.radius=radius;
+    }
+    @Override
+    void area()
+    {
+        double area=Math.PI*radius*radius;
+        System.out.println("AREA IS:"+area);
+    }
+    @Override
+    void circumference()
+    {
+        double circumference=2*Math.PI*radius;
+        System.out.println("CIRCUMFERENCE IS:"+circumference);
+    }
+}
+public class Oop{
+    public static void main(String[] args) {
+        Circle c1=new Circle(5);
+        c1.display();
+        c1.area();
+        c1.circumference();
+    }
+}
+    
 
 
 
