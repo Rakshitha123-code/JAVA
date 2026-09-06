@@ -4878,7 +4878,7 @@ public class Oop{
     }
 }*/
 // INTERFACE WITH DEFAULT METHOD
-interface Animal{
+/*interface Animal{
     default void eat()
     {
         System.out.println("Eating");
@@ -4892,7 +4892,24 @@ public class Oop{
         Dog d1=new Dog();
         d1.eat();
     }
+}*/
+// INTERFACE WITH STATIC METHOD
+interface Animal{
+       static void eat()
+       {
+        System.out.println("Eating");
+       }
 }
+class Dog implements Animal{
+
+}
+public class Oop{
+    public static void main(String[] args) {
+        Dog d1=new Dog();
+        Animal.eat();
+    }
+}
+
 
     
 
