@@ -4894,7 +4894,7 @@ public class Oop{
     }
 }*/
 // INTERFACE WITH STATIC METHOD
-interface Animal{
+/*interface Animal{
        static void eat()
        {
         System.out.println("Eating");
@@ -4907,6 +4907,23 @@ public class Oop{
     public static void main(String[] args) {
         Dog d1=new Dog();
         Animal.eat();
+    }
+}*/
+// INTERFACE WITH VARIABLES
+interface Animal{
+    int legs=4;
+   
+}
+class Dog implements Animal{
+    void display()
+    {
+        System.out.println("LEGS IS:"+legs);
+    }
+}
+public class Oop{
+    public static void main(String[] args) {
+        Dog d1=new Dog();
+        d1.display();
     }
 }
 
