@@ -4999,11 +4999,44 @@ public class Oop{
         b1.display();
     }
  }*/
+/*3)class Student{
+    String name;
+    int age;
+    Student()
+    {
+          this.name=name;
+          this.age=age;
+    }
+    Student(String name)
+    {
+        this.name=name;
+        this.age=age;
+    }
+    Student(String name,int age)
+    {
+        this.name=name;
+        this.age=age;
+    }
+    void display()
+    {
+        System.out.println(name);
+        System.out.println(age);
+    }
+}
+public class Oop
+{
+    public static void main(String[] args) {
+        Student s1=new Student();
+        Student s2=new Student("RAJ");
+         Student s3=new Student("RAM",19);
+         s1.display();
+         s2.display();
+         s3.display();
 
 
+    }
+}*/
 
-
-    
 
 
 
