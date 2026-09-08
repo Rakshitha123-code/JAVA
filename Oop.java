@@ -4305,7 +4305,10 @@ public class Oop{
     
     }
 }*/
-/*  In This code,the name and int are marked private as private members are accessed only within the same class and not outside it so the code will give error as we are trying to access the private members of the class Person in the main method of the class Oop. To fix this issue, we can use public getter and setter methods in the Person class to access and modify the private members. Here's the corrected code:
+/*  In This code,the name and int are marked private as private members are accessed only within 
+the same class and not outside it so the code will give error as we are trying to access the private members of the 
+class Person in the main method of the class Oop. To fix this issue, we can use public getter and setter methods in the
+ Person class to access and modify the private members. Here's the corrected code:
 */
 // INHERITANCE WITH ENCAPSULATION CORRECT VERSION WITH GETTERS AND SETTERS
 /*class Person{
@@ -4927,7 +4930,7 @@ public class Oop{
     }
 }*/
 // INTERFACE WITH MULTIPLE INHERITANCE
-interface A{
+/*interface A{
     default void show()
     {
         System.out.println("A");
@@ -4952,6 +4955,156 @@ public class Oop{
     public static void main(String[] args) {
         C c1=new C();
         c1.show();
+    }
+}*/
+// l   LEVEL 1
+ /*1) class Student{
+        String name;
+        int age;
+        double marks;
+    }
+    public class Oop{
+        public static void main(String[] args) {
+            Student s1=new Student();
+            s1.name="RAJ";
+            s1.age=16;
+            s1.marks=62.76;
+            System.out.println(s1.name);
+            System.out.println(s1.age);
+            System.out.println(s1.marks);
+
+        }
+    }
+*/
+  /*2)class BankAccount{
+    long accountNumber;
+    String accountHolder;
+    double balance;
+    BankAccount(long accountNumber,String accountHolder,double balance)
+    {
+         this.accountHolder=accountHolder;
+         this.accountNumber=accountNumber;
+         this.balance=balance;
+    }
+    void display()
+    {
+        System.out.println(accountHolder);
+        System.out.println(accountNumber);
+        System.out.println(balance);
+    }
+ }
+ public class Oop{
+    public static void main(String[] args) {
+        BankAccount b1=new BankAccount(123456, "RAJ", 123452.45);
+        b1.display();
+    }
+ }*/
+/*3)class Student{
+    String name;
+    int age;
+    Student()
+    {
+          this.name=name;
+          this.age=age;
+    }
+    Student(String name)
+    {
+        this.name=name;
+        this.age=age;
+    }
+    Student(String name,int age)
+    {
+        this.name=name;
+        this.age=age;
+    }
+    void display()
+    {
+        System.out.println(name);
+        System.out.println(age);
+    }
+}
+public class Oop
+{
+    public static void main(String[] args) {
+        Student s1=new Student();
+        Student s2=new Student("RAJ");
+         Student s3=new Student("RAM",19);
+         s1.display();
+         s2.display();
+         s3.display();
+
+
+    }
+}*/
+//LEVEL 2-ENCAPSULATION
+/*4) class BankAccount{
+    private String  accountHolder;
+    private int balance=10000;
+    void deposit(int amount)
+    {
+        if(amount>0)
+        {
+            this.balance=balance+amount;
+        }
+        else
+        {
+            System.out.println("ENTER SUFFICIENT AMOUNT");
+        }
+    }
+    void withdraw(int amount)
+    {
+        if(amount<0 && amount>balance)
+        {
+            System.out.println(" INSUFFICIENT AMOUNT");
+        }
+        
+        else
+        {
+            this.balance-=amount;
+        }
+    }
+    int   getbalance()
+    {
+        return balance;
+    }
+
+}
+public class Oop{
+    public static void main(String[] args) {
+        BankAccount b1=new BankAccount();
+        b1.deposit(50000);
+        b1.withdraw(1000);
+        System.out.println(b1.getbalance());
+
+        
+    }
+}*/
+
+class Student{
+    private  int  marks;
+    void setmarks( int  marks)
+    {
+     if(marks<0 && marks>100)
+     {
+        System.out.println("ENTER VALID MARKS");
+     }
+     else
+     {
+        this.marks=marks;
+     }
+    }
+     int  getmarks()
+    {
+        return marks;
+    }
+    
+
+}
+public class Oop{
+    public static void main(String[] args) {
+        Student s1=new Student();
+        s1.setmarks(89);
+        System.out.println(s1.getmarks());
     }
 }
 
