@@ -5036,7 +5036,52 @@ public class Oop
 
     }
 }*/
+//LEVEL 2-ENCAPSULATION
+/*4) class BankAccount{
+    private String  accountHolder;
+    private int balance=10000;
+    void deposit(int amount)
+    {
+        if(amount>0)
+        {
+            this.balance=balance+amount;
+        }
+        else
+        {
+            System.out.println("ENTER SUFFICIENT AMOUNT");
+        }
+    }
+    void withdraw(int amount)
+    {
+        if(amount<=0 || amount>balance)
+        {
+            System.out.println(" INSUFFICIENT AMOUNT");
+        }
+        
+        else
+        {
+            this.balance-=amount;
+        }
+    }
+    int   getbalance()
+    {
+        return balance;
+    }
 
+}
+public class Oop{
+    public static void main(String[] args) {
+        BankAccount b1=new BankAccount();
+        b1.deposit(50000);
+        b1.withdraw(1000);
+        System.out.println(b1.getbalance());
+
+        
+    }
+}*/
+
+
+    
 
 
 
