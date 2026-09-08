@@ -5079,6 +5079,36 @@ public class Oop{
         
     }
 }*/
+/*5)class Student{
+    private  int  marks;
+    void setmarks( int  marks)
+    {
+     if(marks<0 || marks>100)
+     {
+        System.out.println("ENTER VALID MARKS");
+     }
+     else
+     {
+        this.marks=marks;
+     }
+    }
+     int  getmarks()
+    {
+        return marks;
+    }
+    
+
+}
+public class Oop{
+    public static void main(String[] args) {
+        Student s1=new Student();
+        s1.setmarks(89);
+        System.out.println(s1.getmarks());
+    }
+}*/
+
+
+
 
 
     
