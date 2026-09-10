@@ -5004,8 +5004,8 @@ public class Oop{
     int age;
     Student()
     {
-          this.name=name;
-          this.age=age;
+          name=null
+          age=0;;
     }
     Student(String name)
     {
@@ -5015,7 +5015,7 @@ public class Oop{
     Student(String name,int age)
     {
         this.name=name;
-        this.age=age;
+        age=0;
     }
     void display()
     {
@@ -5106,33 +5106,124 @@ public class Oop{
         System.out.println(s1.getmarks());
     }
 }*/
+// 6)
+/*class Animal{
+    void eat()
+    {
+        System.out.println("Animal eating");
+    }
+    void sleep(){
+        System.out.println("Dog eating");
+    }
+}
+class Dog extends Animal{
+    void bark()
+    {
+        System.out.println("Dog barking");
+    }
+}
+class Oop{
+    public static void main(String[] args) {
+        Dog d1=new Dog();
+        d1.eat();
+        d1.sleep();
+        d1.bark();
+    }
+}*/
+//7)
+/*class Animal{
+    void eat()
+    {
+        System.out.println("Animal eating");
+    }
 
+}
+class Mammal extends Animal{
+    void sleep()
+    {
+        System.out.println("Mammal eating");
+    }
+}
+class Dog extends Mammal{
+    void dog()
+    {
+        System.out.println("Dog eating");
+    }
+}
+class Oop{
+    public static void main(String[] args) {
+        Dog d1=new Dog();
+        d1.dog();
+        d1.sleep();
+        d1.eat();
+    }
+}*/
+//8)
+/*class Animal{
+    void sound()
+    {
+        System.out.println("Animal sound");
+    }
+}
+class Dog extends Animal{
+    void bark()
+    {
+        System.out.println("Dog bark");
+    }
+}
+class Cat extends Animal{
+    void meow()
+    {
+        System.out.println("Cat sound");
+    }
+}
+class Oop{
+    public static void main(String[] args) {
+        Cat c1=new Cat();
+        c1.meow();
+        c1.sound();
+        Dog d1=new Dog();
+        d1.bark();
+        d1.sound();
+    }
+}*/
+//9)
+/*class Animal{
+    String name="Animal";
+}
+class Dog extends Animal{
+    String name="Dog";
+    void display()
+    {
+        System.out.println(super.name);
+        System.out.println(name);
+    }
+}
+class Oop{
+    public static void main(String[] args) {
+        Dog d1=new Dog();
+        d1.display();
+    }
+}*/
+//10)
+class Animal{
+    void sound()
+    {
+        System.out.println("Animal sound");
+    }
+}
+class Dog extends Animal{
+    void sound()
+    {
+        super.sound();
 
-
-
-
+        System.out.println("Dog sound");
+    }
     
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+}
+class Oop{
+    public static void main(String[] args) {
+        Dog d1=new Dog();
+        d1.sound();
+    }
+}
