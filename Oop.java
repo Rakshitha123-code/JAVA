@@ -5249,7 +5249,7 @@ class Oop{
     }
 }*/
 //12)
-class Calculator{
+/*class Calculator{
     int add(int a,int b)
     {
         return a+b;
@@ -5269,5 +5269,26 @@ class Oop{
         System.out.println(c1.add(12,12));
        System.out.println(c1.add(1.22,1.22));
        System.out.println(c1.add(12,12,12));
+    }
+}*/
+//13)
+class Animal{
+    void sound()
+    {
+        System.out.println("Animal sound");
+    }
+}
+class Dog extends Animal{
+    void sound()
+    {
+        super.sound();
+        System.out.println("Dog sound");
+    }
+}
+class Oop{
+    public static void main(String[] args) {
+        Animal a=new Dog();
+        a.sound();
+        
     }
 }
