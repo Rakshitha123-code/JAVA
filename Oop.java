@@ -5293,7 +5293,7 @@ class Oop{
     }
 }*/
 //14)
-class Animal{
+/*class Animal{
     void sound()
     {
         System.out.println("Animal sound");
@@ -5319,5 +5319,26 @@ class Oop{
         a.sound();
         a=new Cat();
         a.sound();
+    }
+}*/
+//15)
+class Animal{
+    void eat()
+    {
+        System.out.println("Animal eating");
+    }
+}
+class Dog extends Animal{
+    void bark()
+    {
+        
+        System.out.println("Dog barking");
+    }
+}
+class Oop{
+    public static void main(String[] args) {
+        Animal a=new Dog();
+        a.eat();
+        //a.bark(); will give error
     }
 }
