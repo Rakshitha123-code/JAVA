@@ -5229,7 +5229,7 @@ class Oop{
     }
 }*/
 // 11)
-class Animal{
+/*class Animal{
      Animal()
     {
     System.out.println("Animal constructor");
@@ -5246,5 +5246,28 @@ class Dog extends Animal {
 class Oop{
     public static void main(String[] args) {
         Dog d1=new Dog();
+    }
+}*/
+//12)
+class Calculator{
+    int add(int a,int b)
+    {
+        return a+b;
+    }
+    double add(double a,double b)
+    {
+        return a+b;
+    }
+    int add(int a,int b,int c)
+    {
+        return a+b+c;
+    }
+}
+class Oop{
+    public static void main(String[] args) {
+        Calculator c1=new Calculator();
+        System.out.println(c1.add(12,12));
+       System.out.println(c1.add(1.22,1.22));
+       System.out.println(c1.add(12,12,12));
     }
 }
