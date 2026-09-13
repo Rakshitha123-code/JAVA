@@ -5322,7 +5322,7 @@ class Oop{
     }
 }*/
 //15)
-class Animal{
+/*class Animal{
     void eat()
     {
         System.out.println("Animal eating");
@@ -5339,6 +5339,40 @@ class Oop{
     public static void main(String[] args) {
         Animal a=new Dog();
         a.eat();
+        //a.bark(); will give error
+    }
+}*/
+//16)
+//15)
+class Animal{
+    void eat()
+    {
+        System.out.println("Animal eating");
+    }
+}
+class Dog extends Animal{
+    void bark()
+    {
+        
+        System.out.println("Dog barking");
+    }
+}
+class Cat extends Animal{
+    void sound()
+    {
+        System.out.println("Cat sound");
+    }
+}
+class Oop{
+    public static void main(String[] args) {
+        Animal a=new Dog();
+        Dog d1=(Dog)a;
+       d1.bark();
+       Animal a1=new Cat();
+       Dog d=(Dog) a1;
+       d.bark();
+       
+
         //a.bark(); will give error
     }
 }
