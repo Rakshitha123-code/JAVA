@@ -4957,6 +4957,7 @@ public class Oop{
         c1.show();
     }
 }*/
+//=======PRACTICE PROBLEMS =========//
 // l   LEVEL 1
  /*1) class Student{
         String name;
@@ -5206,7 +5207,7 @@ class Oop{
     }
 }*/
 //10)
-class Animal{
+/*class Animal{
     void sound()
     {
         System.out.println("Animal sound");
@@ -5225,5 +5226,25 @@ class Oop{
     public static void main(String[] args) {
         Dog d1=new Dog();
         d1.sound();
+    }
+}*/
+// 11)
+class Animal{
+     Animal()
+    {
+    System.out.println("Animal constructor");
+    }
+}
+class Dog extends Animal {
+      Dog()
+    {
+        super();
+        System.out.println("Dog constructor");
+
+    }
+}
+class Oop{
+    public static void main(String[] args) {
+        Dog d1=new Dog();
     }
 }
