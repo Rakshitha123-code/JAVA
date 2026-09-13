@@ -5272,7 +5272,7 @@ class Oop{
     }
 }*/
 //13)
-class Animal{
+/*class Animal{
     void sound()
     {
         System.out.println("Animal sound");
@@ -5291,4 +5291,4 @@ class Oop{
         a.sound();
         
     }
-}
+}*/
