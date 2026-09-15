@@ -5378,7 +5378,7 @@ class Oop{
     }
 }*/
 //17)
-abstract class Animal{
+/*abstract class Animal{
     abstract void sound();
     void eat()
     {
@@ -5398,5 +5398,24 @@ public class Oop{
         Animal a=new Dog();
         a.sound();
         a.eat();
+    }
+}*/
+//18)
+abstract class Vehicle{
+    Vehicle()
+    {
+        System.out.println("Vehicle constructor");
+    }
+}
+class Car extends Vehicle{
+    Car()
+    {
+        System.out.println("Car constructor");
+    }
+}
+public class Oop{
+    public static void main(String[] args) {
+        Car c1=new Car();
+        
     }
 }
