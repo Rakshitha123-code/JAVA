@@ -5465,3 +5465,18 @@ public class Oop{
     }
 }*/
 // 21 gives error bcoz interface variables public final and cannot be changed if tried then we get error
+//22)
+interface Animal {
+    default void eat() {
+        System.out.println("Eating");
+    }
+}
+class Dog implements Animal{
+
+}
+public class Oop{
+    public static void main(String[] args) {
+        Dog d1=new Dog();
+        d1.eat();
+    }
+}
