@@ -5401,7 +5401,7 @@ public class Oop{
     }
 }*/
 //18)
-abstract class Vehicle{
+/*abstract class Vehicle{
     Vehicle()
     {
         System.out.println("Vehicle constructor");
@@ -5416,6 +5416,28 @@ class Car extends Vehicle{
 public class Oop{
     public static void main(String[] args) {
         Car c1=new Car();
-        
+
+    }
+}*/
+//19)
+ interface Payment{
+      void pay();
+}
+class Upi implements Payment{
+     public void pay()
+    {
+        System.out.println("Payment done via upi");
+    }
+}
+class Credit implements Payment{
+    public void pay()
+    {
+        System.out.println("Payment done via card");
+    }
+}
+public class Oop{
+    public static void main(String[] args) {
+        Credit c1=new Credit();
+        c1.pay();
     }
 }
