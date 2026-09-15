@@ -5442,7 +5442,7 @@ public class Oop{
     }
 }*/
 //20)
-interface Flyable{
+/*interface Flyable{
     void fly();
     void swim();
 
@@ -5463,4 +5463,5 @@ public class Oop{
         d1.fly();
         d1.swim();
     }
-}
+}*/
+// 21 gives error bcoz interface variables public final and cannot be changed if tried then we get error
