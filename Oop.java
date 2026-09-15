@@ -5481,7 +5481,7 @@ public class Oop{
     }
 }*/
 // 23)
-interface Test {
+/*interface Test {
     static void show() {
         System.out.println("Hello");
     }
@@ -5490,5 +5490,32 @@ public class Oop{
     public static void main(String[] args) {
         Test.show();
     }
-}
+}*/
 // when tried to access by creating objects there is an error
+// 24)
+interface A {
+    default void show() {
+        System.out.println("A");
+    }
+}
+
+interface B {
+    default void show() {
+        System.out.println("B");
+    }
+}
+class  C implements A,B {
+    @Override
+       public void show()
+    {
+        A.super.show();
+        B.super.show();
+        System.out.println("C");
+    }
+}
+public class Oop{
+    public static void main(String[] args) {
+        C c1=new C();
+        c1.show();
+    }
+}
