@@ -5343,8 +5343,8 @@ class Oop{
     }
 }*/
 //16)
-//15)
-class Animal{
+
+/*class Animal{
     void eat()
     {
         System.out.println("Animal eating");
@@ -5371,8 +5371,32 @@ class Oop{
        Animal a1=new Cat();
        Dog d=(Dog) a1;
        d.bark();
+       //d.sound() ;will also give error
        
 
         //a.bark(); will give error
+    }
+}*/
+//17)
+abstract class Animal{
+    abstract void sound();
+    void eat()
+    {
+        System.out.println("Eating");
+    }
+}
+class Dog  extends Animal{
+    @Override 
+    void sound()
+    {
+        System.out.println("Dog sound");
+    }
+
+}
+public class Oop{
+    public static void main(String[] args) {
+        Animal a=new Dog();
+        a.sound();
+        a.eat();
     }
 }
