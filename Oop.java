@@ -5466,7 +5466,7 @@ public class Oop{
 }*/
 // 21 gives error bcoz interface variables public final and cannot be changed if tried then we get error
 //22)
-interface Animal {
+/*interface Animal {
     default void eat() {
         System.out.println("Eating");
     }
@@ -5479,4 +5479,16 @@ public class Oop{
         Dog d1=new Dog();
         d1.eat();
     }
+}*/
+// 23)
+interface Test {
+    static void show() {
+        System.out.println("Hello");
+    }
 }
+public class Oop{
+    public static void main(String[] args) {
+        Test.show();
+    }
+}
+// when tried to access by creating objects there is an error
