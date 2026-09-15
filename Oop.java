@@ -5420,7 +5420,7 @@ public class Oop{
     }
 }*/
 //19)
- interface Payment{
+ /*interface Payment{
       void pay();
 }
 class Upi implements Payment{
@@ -5439,5 +5439,28 @@ public class Oop{
     public static void main(String[] args) {
         Credit c1=new Credit();
         c1.pay();
+    }
+}*/
+//20)
+interface Flyable{
+    void fly();
+    void swim();
+
+}
+class Duck implements Flyable{
+    public void fly()
+    {
+        System.out.println("Can fly");
+    }
+    public void swim()
+    {
+        System.out.println("Can swim");
+    }
+}
+public class Oop{
+    public static void main(String[] args) {
+        Duck d1=new Duck();
+        d1.fly();
+        d1.swim();
     }
 }
