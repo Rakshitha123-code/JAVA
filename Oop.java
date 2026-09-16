@@ -5444,10 +5444,12 @@ public class Oop{
 //20)
 /*interface Flyable{
     void fly();
-    void swim();
 
 }
-class Duck implements Flyable{
+    interface swimmable{
+       void swim();
+    }
+class Duck implements Flyable,swimmable{
     public void fly()
     {
         System.out.println("Can fly");
@@ -5493,7 +5495,7 @@ public class Oop{
 }*/
 // when tried to access by creating objects there is an error
 // 24)
-interface A {
+/*interface A {
     default void show() {
         System.out.println("A");
     }
@@ -5517,5 +5519,65 @@ public class Oop{
     public static void main(String[] args) {
         C c1=new C();
         c1.show();
+    }
+}
+*/
+
+// EMPLOYEE SYSTEM
+class Employee{
+    private String name;
+    private long salary;
+    Employee()
+    {
+       this.name=name;
+       this.salary=salary;
+    }
+    void setName(String name)
+    {
+        this.name=name;
+    }
+    String getName()
+    {
+        return name;
+    }
+    void work()
+    {
+        System.out.println("EMPLOYEE WORKING");
+    }
+    
+    
+
+}
+class Developer extends Employee{
+    void work()
+    {
+        System.out.println("Developer working");
+    }
+    void code()
+    {
+        System.out.println("Developer writting code");
+    }
+}
+class MLDeveloper extends Developer{
+    void work()
+    {
+        System.out.println("MLDEVELOPER WORKING");
+    }
+    void buildcode()
+    {
+        System.out.println("MLDEVELOPER BUILDING CODE");
+    }
+}
+public class Oop{
+    public static void main(String[] args) {
+        Employee e1=new MLDeveloper();
+        e1.setName("RAJ");
+        System.out.println(e1.getName());
+        e1.work();
+        //e1.code(); gives error bcoz code isn't present in mldeveloper class
+        //e1.buildcode();  error bcoz buildcode isn't present in employee class
+
+
+
     }
 }
