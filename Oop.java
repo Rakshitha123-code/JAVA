@@ -5617,7 +5617,7 @@ public class Oop{
     }
 }*/
 // VEHICLE SYSTEM
-abstract class Vehicle{
+/*abstract class Vehicle{
     abstract  void start();
 }
 class Car extends Vehicle{
@@ -5646,5 +5646,79 @@ public class Oop{
         v2.start();
         Vehicle v3=new Bus();
         v3.start();
+    }
+}*/
+// EMPLOYEE SYSTEM
+ abstract class Employee{
+  private String  name;
+  private double salary;
+  Employee()
+  {
+  }
+  Employee(String name,double salary)
+  {
+    this.name=name;
+    this.salary=salary;
+  }
+  void setname(String name)
+  {
+     this.name=name;
+  }
+  String getname()
+  {
+    return name;
+  }
+  void setsalary(double salary)
+  {
+     this.salary=salary;
+  }
+  double getsalary()
+  {
+    return salary;
+  }
+  abstract void work();
+  void displaydetails()
+  {
+    System.out.println("NAME IS "+name);
+    System.out.println("SALARY IS "+salary);
+  }
+}
+class Developer extends Employee{
+    void work()
+    {
+        System.out.println("DEVELOPER WORKED");
+    }
+    void code()
+    {
+        System.out.println("Developer writing code");
+    }
+}
+class MLdeveloper extends Developer{
+    void work()
+    {
+        System.out.println("ML developer working");
+    }
+    void buildmodel()
+    {
+        System.out.println("ML developer building model");
+    }
+}
+class Manager extends Employee{
+    void work()
+    {
+        System.out.println("Manager managing team");
+    }
+}
+public class Oop{
+    public static void main(String[] args) {
+        Employee e1=new MLdeveloper();
+        Employee e2=new Manager();
+        e1.work();
+        e2.work();
+       Developer d1= (Developer)e1;
+       d1.code();
+       MLdeveloper m1= (MLdeveloper)e1;
+       m1.buildmodel();
+       
     }
 }
