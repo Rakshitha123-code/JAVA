@@ -5524,14 +5524,10 @@ public class Oop{
 */
 
 // EMPLOYEE SYSTEM
-class Employee{
+/*class Employee{
     private String name;
     private long salary;
-    Employee()
-    {
-       this.name=name;
-       this.salary=salary;
-    }
+    
     void setName(String name)
     {
         this.name=name;
@@ -5579,5 +5575,44 @@ public class Oop{
 
 
 
+    }
+}*/
+// PAYMENT SYSTEM
+interface Payment{
+    void pay(double amount);
+    
+}
+class Upi implements Payment{
+
+public void pay(double amount)
+{ 
+    System.out.println("Paid via UPI"+ amount);
+
+}
+}
+class Creditcard implements Payment{
+
+public void pay(double amount)
+{ 
+    System.out.println("Paid via Creditcard "+amount);
+
+}
+}
+class Cash implements Payment{
+
+public void pay(double amount)
+{ 
+    System.out.println("Paid via Cash" +amount);
+
+}
+}
+public class Oop{
+    public static void main(String[] args) {
+        Payment p=new Cash();
+        p.pay(1200);
+        Payment p1=new Creditcard();
+        p1.pay(12000);
+        Payment p2=new Upi();
+        p2.pay(500);
     }
 }
