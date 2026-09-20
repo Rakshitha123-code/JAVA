@@ -5578,7 +5578,7 @@ public class Oop{
     }
 }*/
 // PAYMENT SYSTEM
-interface Payment{
+/*interface Payment{
     void pay(double amount);
     
 }
@@ -5614,5 +5614,37 @@ public class Oop{
         p1.pay(12000);
         Payment p2=new Upi();
         p2.pay(500);
+    }
+}*/
+// VEHICLE SYSTEM
+abstract class Vehicle{
+    abstract  void start();
+}
+class Car extends Vehicle{
+    void start()
+    {
+        System.out.println("CAR STARTED");
+    }
+}
+class Bike extends Vehicle{
+    void start()
+    {
+        System.out.println("BIKE STARTED");
+    }
+}
+class Bus extends Vehicle{
+  void start()
+  {
+    System.out.println("BUS STARTED");
+  }
+}
+public class Oop{
+    public static void main(String[] args) {
+        Vehicle v1=new Car();
+        v1.start();
+        Vehicle v2=new Bike();
+        v2.start();
+        Vehicle v3=new Bus();
+        v3.start();
     }
 }
