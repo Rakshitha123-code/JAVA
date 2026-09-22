@@ -5649,7 +5649,7 @@ public class Oop{
     }
 }*/
 // EMPLOYEE SYSTEM
- abstract class Employee{
+ /*abstract class Employee{
   private String  name;
   private double salary;
   Employee()
@@ -5720,5 +5720,14 @@ public class Oop{
        MLdeveloper m1= (MLdeveloper)e1;
        m1.buildmodel();
        
+    }
+}*/
+// EXCEPTIONS IN JAVA
+public class Oop{
+    public static void main(String[] args) {
+        int a=10;
+        int b=0;
+        int c=a/b;
+        System.out.println(c);
     }
 }
